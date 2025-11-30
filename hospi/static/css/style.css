@@ -338,3 +338,51 @@ footer {
         padding: 3rem 5%;
     }
 }
+
+/* ====================
+   Responsive Tweaks
+==================== */
+
+/* Navbar improvements */
+@media (max-width: 768px) {
+    .nav-links a {
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* Hero Section */
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* Cards Section */
+.card-container {
+    padding: 7rem 5%;
+    gap: 1.5rem;
+}
+
+/* Doctor images */
+.doctor-card img {
+    height: auto;
+    max-height: 300px;
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+    .contact-box {
+        padding: 2rem;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
