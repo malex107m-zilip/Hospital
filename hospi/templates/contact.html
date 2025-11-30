@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block title %}contact{% endblock title %}
+
+{% block body %}
+<section class="contact" id="contact">
+        <div class="contact-box">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Appointments</h2>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="phone" placeholder="Phone Number" required>
+                <textarea rows="5" placeholder="Your Message or Query" required></textarea>
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+{% endblock body %}
